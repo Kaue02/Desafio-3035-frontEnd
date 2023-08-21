@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet-store</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/geral.css">
+    <link rel="stylesheet" href="../style/produtos.css">
+</head>
+
+<body>
+    <div id="body">
+        <div class="header" id="header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="logo_header">
+                <img src="../img/pet store.png" alt="Logomarca Pet-store" class="img_logo_header">
+            </div>
+            <div class="navigation_header" id="navigation_header">
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+                <a href="index.html">Home</a>
+                <a href="dados.html">Listagem</a>
+                <a href="produto.html" class="active">Produtos</a>
+            </div>
+        </div>
+    </div>
+    <div class="mensagem" id="mensagem"></div>
+    <div class="corpo">
+        <div class="card" onclick="adicionarAoCarrinho('galinha que grita', '19,99')">
+            <img src="../img/brinquedo de cachorro.jfif" alt="">
+            <div>
+                <h2>Galinha que grita</h2>
+                <h3>Uma galinha que grita! Moda entre os cães!</h3>
+                <span>R$19,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('bola colorida', '9,99')">
+            <img src="../img/brinquedo de cachorro 2.webp" alt="">
+            <div>
+                <h2>Bolinha colorida</h2>
+                <h3>Uma bela bola colorida que quica!</h3>
+                <span>R$9,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('milho barulhento', '19,99')">
+            <img src="../img/brinquedo de cachorro 3.jpg" alt="">
+            <div>
+                <h2>Milho barulhento</h2>
+                <h3>Um milho que quando é mordido na ponta faz barulho!</h3>
+                <span>R$19,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('peixe', '25,00')">
+            <img src="../img/brinquedo de gato.png" alt="">
+            <div>
+                <h2>Peixe de brinquedo</h2>
+                <h3>Um peixe! Um amor tanto de gatos quanto de cães!</h3>
+                <span>R$25,00</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('poste com bolas', '29,99')">
+            <img src="../img/brinquedo de gato 2.jpg" alt="">
+            <div>
+                <h2>Poste com bolas!</h2>
+                <h3>Um poste com duas bolas penduradas nele por cordas! Levam os gatos a loucura!</h3>
+                <span>R$29,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('rato', '19,99')">
+            <img src="../img/brinquedo de gato 3.jfif" alt="">
+            <div>
+                <h2>Rato fugitivo!</h2>
+                <h3>Um rato que corre do gato! Excelente para fazer seu gato correr</h3>
+                <span>R$19,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('ração pedigree', '99,99')">
+            <img src="../img/ração pedigree.webp" alt="">
+            <div>
+                <h2>Ração pedigree</h2>
+                <h3>Não tem erro! A favorita dos nossos amigos de quatro patas!</h3>
+                <span>R$99,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('racao all love', '149,99')">
+            <img src="../img/ração all love.jpg" alt="">
+            <div>
+                <h2>Ração all love</h2>
+                <h3>Uma ração vegana que traz todos os nutrientes que seu pet necessita"</h3>
+                <span>R$149,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('ração quartz', '109,99')">
+            <img src="../img/ração quartz.webp" alt="">
+            <div>
+                <h2>Ração quartz</h2>
+                <h3>Excelente ração para cães de pequeno porte</h3>
+                <span>R$109,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('racao nhac', '64,99')">
+            <img src="../img/ração nhac.png" alt="">
+            <div>
+                <h2>Ração nhac</h2>
+                <h3>Uma ração nutritiva e saborosa! Ao mesmo tempo é uma opção mais barata</h3>
+                <span>R$64,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('racao kat bom', '149,99')">
+            <img src="../img/Katbom-Filhotes.webp" alt="">
+            <div>
+                <h2>Ração kat bom</h2>
+                <h3>Ração kat bom filhote!</h3>
+                <span>R$149,99</span>
+            </div>
+        </div>
+        <div class="card" onclick="adicionarAoCarrinho('racao gran plus', '169,99')">
+            <img src="../img/ração gran plus.webp" alt="">
+            <div>
+                <h2>Ração Gran Plus</h2>
+                <h3>Uma ração extremamente saborosa para o seu amado gato!</h3>
+                <span>R$169,99</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../js/header.js"></script>
+    <script src="../js/carinho.js"></script>
+</body>
+
+</html>

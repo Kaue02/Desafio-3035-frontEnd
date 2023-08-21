@@ -1,0 +1,67 @@
+main {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.listagem-clientes {
+    font-size: 25px;
+}
+
+
+
+.card {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    margin: 0px;
+}
+
+.dadosSimplificados {
+    text-align: center;
+    justify-content: center;
+    border: 0px;
+
+}
+
+.dado-simples {
+    padding: 8px;
+    margin: 3px;
+    border: solid 2px black;
+}
+
+.modal {
+    width: 450px;
+}
+
+.modal::backdrop {
+    backdrop-filter: blur(8px);
+}
+
+.botao_fecha_modal {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 860px) {
+    .listagem-clientes {
+        font-size: 40px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 5px;
+    }
+    .modal {
+        width: 50%;
+        height: 60%;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet-store</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/geral.css">
+</head>
+
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="../img/pet store.png" alt="Logomarca Pet-store" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+            <a href="index.html" class="active">Home</a>
+            <a href="dados.html">Listagem</a>
+            <a href="produto.html">Produtos</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="container" id="content">
+            <div class="sobre">
+                <h1>Faça agora o agendamento!</h1>
+                <p>Temos o atendimento com maior indice de aprovação do mercado!
+                    <br> Contamos com especialistas extremamente competentes e horários de atendimento flexivel!<br>
+                    Você está esperando o que? Preencha o formulario abaixo para marcar um atendimento para o seu pet!
+                </p>
+            </div>
+            <div class="form">
+                <form action="" id="novoItem">
+                    <fieldset>
+                        <legend>Agende o Atendimento!</legend>
+                        <br>
+                        <div class="caixa">
+
+                            <input type="text" name="nome" id="nome__dono" class="dados" required>
+                            <label for="nome__dono" class="labelInput">Digite seu nome</label>
+
+                        </div><br>
+                        <div class="caixa">
+                            <input type="text" name="numero" id="numero__dono" class="dados" required>
+                            <label for="numero__dono" class="labelInput">Digite seu Telefone</label>
+                        </div><br>
+                        <div class="caixa">
+
+                            <input type="text" name="endereco" id="endereco" class="dados" required>
+                            <label for="endereco" class="labelInput">Digite seu endereco</label>
+                        </div><br><br>
+
+                        <label for="data">Escolha uma data para o atendimento</label><br>
+                        <input type="date" name="data" id="data" required>
+                        <br><br>
+
+                        <div class="caixa">
+                            <input type="text" name="nome" id="nome__pet" class="dados" required>
+                            <label for="nome__pet" class="labelInput">Digite o nome do pet</label>
+                        </div> <br>
+                        <div class="caixa">
+                            <input type="number" name="idade" id="idade" class="dados" required>
+                            <label for="idade" class="labelInput">Digite a idade do pet</label>
+                        </div><br>
+                        <p>Escolha o porte do pet:</p>
+
+                        <input type="radio" id="pequeno_porte" class="porte" name="porte" value="pequeno" required>
+                        <label for="pequeno">Pequeno porte</label>
+
+                        <input type="radio" id="medio_porte" class="porte" name="porte" value="medio" required>
+                        <label for="medio">Medio porte</label>
+
+                        <input type="radio" id="grande_porte" class="porte" name="porte" value="grande" required>
+                        <label for="grande">Grande porte</label> <br><br>
+
+                        <input type="submit" name="botao" onclick="pegarValorRadio()" id="botao">
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="../js/dados.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

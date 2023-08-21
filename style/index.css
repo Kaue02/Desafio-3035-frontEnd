@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #FF6A00, #FFD100);
+}
+.sobre{
+
+    padding: 6px;
+    text-align: center;
+    color: black;
+}
+.sobre h1{
+    font-size: xx-large;
+    padding: 6px;
+}
+.sobre p{
+    padding: 5px;
+    font-size: 16px;
+}
+.form {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 14px;
+    width: 40%;
+    color: white;
+}
+
+legend {
+    border: 1px solid orange;
+    padding: 10px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.caixa {
+    position: relative;
+    
+}
+
+.dados {
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+
+.dados:focus~.labelInput, .dados:valid ~.labelInput {
+    top: -20px;
+    font-size: 11px;
+    color: black;
+} 
+#data{
+    border: none;
+    padding: 4px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 13px;
+ }
+#botao{
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container {
+    font-size: 14px;
+}
+@media screen and (max-width: 860px) {
+.form{
+    width: 80%;
+    height: max-content;
+}
+}
